@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "ecotry",
+	"version": "${version}",
+	"name": "EcoTry",
+	"description": "Bridge between EcoBal and command blocks: /ecotry take|give|has really fail when there is not enough money, so 'execute store success' and conditional chain command blocks can branch on it. /ecotry balance returns the balance as the command result.",
+	"authors": [
+		"nasty.codes"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/${slug}",
+		"sources": "https://github.com/nastycodes/ecotry",
+		"issues": "https://github.com/nastycodes/ecotry/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/ecotry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"codes.nasty.ecotry.EcoTry"
+		],
+		"modmenu": [
+			"codes.nasty.ecotry.client.config.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"ecobal": ">=1.0.1"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
